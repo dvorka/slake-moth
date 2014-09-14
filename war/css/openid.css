@@ -1,0 +1,41 @@
+﻿body {font-family: Arial;}
+fieldset {border-style:none;}
+img {border-style:none;}
+
+form.openid ul { text-align:center; list-style-type:none; display:inline;}
+form.openid ul li {float:left; padding:4px}
+form.openid ul li span {padding:0 1em 0 3px}
+form.openid fieldset {clear:both; padding:1em 0}
+form.openid div+fieldset {display:none}
+form.openid label {display:block; font-weight:normal; font-size:normal; margin-bottom:.5em}
+input[name=openid_username] {width:8em}
+input[name=openid_identifier] {width:18em}
+form.openid ul li.highlight { -moz-border-radius:4px; -webkit-border-radius:4px; background-color: #FD6}
+form.openid fieldset div {font-family:arial;-moz-border-radius:4px; -webkit-border-radius:4px; 
+                          background: #fff url(images/fadegrey.png); padding:0px; display:inline-block}
+form.openid input[type='submit'] {margin-left:1em;}
+
+.openid_logo{color:#F7931E;padding:6px 0px 8px 28px; background: url(images/openidico.png) no-repeat}
+
+#openid_login{float:left; font-size:larger; width:30%; margin:2em 1em; text-align:center}
+#openid_login div{margin-top:0.5em}
+#openid_login div+span{font-size:smaller}
+
+.mf-button {
+	background-color: #000;
+	color: #fff;
+	font-weight: bolder;
+	white-space: pre;
+	
+	border: solid 1px #000;
+	padding: 5px 10px 5px 10px;
+	margin-right: 3px;
+	border-width: 0px;	
+
+	cursor: hand;
+    cursor: pointer;
+}
+
+.mf-button:hover,  .mf-greenButton {
+	background-color: #008C00;
+}

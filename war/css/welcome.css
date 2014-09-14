@@ -1,0 +1,185 @@
+/* MindForger welcome page CSS */
+
+A:link {text-decoration: none; color: black;}
+A:visited {text-decoration: none; color: black;}
+A:active {text-decoration: none; color: black;}
+A:hover {text-decoration: none; color: black;}
+
+a.signInButton {
+	background-color: #000; 
+	color: #fff; 
+	padding: 0.4em 0.8em 0.4em 0.8em; 
+	font-weight: bold; font-size: 1em;
+	cursor: hand;
+    cursor: pointer;	
+}
+a.signInButton:hover {
+	background-color: #008C00;
+	color: #fff; 
+}
+
+a.signOutButton {
+	background-color: #fff; 
+	color: #000; 
+	padding: 0.4em 0.8em 0.4em 0.8em; 
+	font-weight: bold; font-size: 1em;
+	cursor: hand;
+    cursor: pointer;
+	border: solid 1px #fff;
+}
+a.signOutButton:hover {
+	background-color: #777;
+	color: #fff; 
+	border: solid 1px #fff;
+}
+
+a.mf-button {
+	background-color: #000;
+	color: #fff;
+	font-weight: bolder;
+	white-space: pre;
+		
+	padding: 5px 10px 5px 10px;
+	margin-right: 3px;
+	border-width: 0px;	
+
+	cursor: hand;
+    cursor: pointer;
+}
+
+a.mf-button:hover,  a.mf-greenButton {
+	background-color: #008C00;
+}
+
+.mf-purposeAndTutorialTitle {
+	width: 33%; 
+	text-align: center; 
+	font-size: xx-large;	
+}
+
+.mf-signUpButtonA {
+	cursor: hand; 
+	cursor: pointer; 
+	margin-right: 10px;
+}
+
+.mf-signUpButtonSpan {
+	background-color: #000; 
+	color: #fff; 
+	padding: 0.4em 0.6em 0.4em 0.6em; 
+	font-weight: normal; 
+	font-size: 1.6em;
+}
+
+.mf-signUpButtonSpan:hover {
+	background-color: #008C00;
+}
+
+a.mf-welcomeFootnote {
+	color: #777; 
+	font-weight: normal; 
+	cursor: pointer; 
+	cursor: hand; 
+}
+
+a.mf-welcomeFootnote:hover {
+	color: #000;
+}
+
+/* editions & sign up */
+
+.mf-billingEditionTitle {
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+.mf-billingEditionSubtitle {
+	color: #ccc;
+}
+
+.mf-billingEditionPrice {
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+.mf-chooseEditionContainer {
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+	
+a.mf-chooseEditionButton {
+	background-color: #000; 
+	color: #fff; 
+	padding: 0.4em 0.8em 0.4em 0.8em;
+	font-weight: bold; 
+	font-size: 1em;
+	cursor: hand;
+    cursor: pointer;
+    border: solid 1px #000;
+}
+
+a.mf-chooseEditionButton:hover {
+	background-color: #333;
+	color: #fff; 
+}
+
+.mf-billingNormalEdition {
+	padding: 1em;
+	border: solid 1px #ccc;
+	height: 24em;
+	width: 15em;
+}
+.mf-billingTopEdition {
+	padding: 1em;
+	border: solid 3px #000;
+}
+
+a.mf-explorerOracleButton, a.mf-explorerOracleButton:hover {
+	background-color: #008C00;
+	color: #fff;
+	border: none;
+}
+
+/* shared with www.minforger.com */
+
+a.mf-link {
+	border-bottom: dotted 1px #000;
+}
+a.mf-link:hover {
+	border-bottom: solid 1px #000;
+}
+
+
+.mf-featuresTable{
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+.mf-featuresTable tbody > tr:first-child {
+  background-color: #555;
+  font-weight: bolder;
+  color: #fff;"
+}
+.mf-featuresTable td {
+  border: 1px solid #ccc;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+}
+.mf-featureGroup {
+	background-color: #DDD; 
+	color: #000;
+}
+
+a.mf-showMeButton {
+	background-color: #000;
+	color: #fff;
+	font-weight: bolder;
+	white-space: pre;
+	
+	padding: 3px 5px 3px 5px;
+	margin-right: 3px;
+	border-width: 0px;	
+
+	cursor: hand;
+    cursor: pointer;
+}
+

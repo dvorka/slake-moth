@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd" -->
+<web-app>
+  	
+  	<!-- JSPs -->
+  	
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>  	
+    <servlet>
+        <servlet-name>signUpExplorer</servlet-name>
+        <jsp-file>/WEB-INF/jsp/signUpExplorer.jsp</jsp-file>
+    </servlet>  	
+    <servlet>
+        <servlet-name>editions</servlet-name>
+        <jsp-file>/WEB-INF/jsp/editions.jsp</jsp-file>
+    </servlet>  	
+    <servlet>
+        <servlet-name>loginOpenid</servlet-name>
+        <jsp-file>/WEB-INF/jsp/login-openid.jsp</jsp-file>
+    </servlet>  	
+    <servlet>
+        <servlet-name>adminConsole</servlet-name>
+        <jsp-file>/WEB-INF/jsp/admin/console.jsp</jsp-file>
+    </servlet>  	
+    
+    <servlet>
+        <servlet-name>outlineExport</servlet-name>
+        <jsp-file>/WEB-INF/jsp/outline.jsp</jsp-file>
+    </servlet>  	
+
+    <servlet>
+        <servlet-name>mobileHome</servlet-name>
+        <jsp-file>/WEB-INF/jsp/m/home.jsp</jsp-file>
+    </servlet>  	
+    <servlet>
+        <servlet-name>mobileOutline</servlet-name>
+        <jsp-file>/WEB-INF/jsp/m/outline.jsp</jsp-file>
+    </servlet>  	
+    
+    <!-- servlets -->
+    
+	<servlet>
+		<servlet-name>registrationServlet</servlet-name>
+		<servlet-class>com.mindforger.coachingnotebook.server.servlets.RegistrationServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+    <servlet>
+        <servlet-name>loginRequiredServlet</servlet-name>
+        <servlet-class>com.mindforger.coachingnotebook.server.servlets.LoginRequiredServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+    </servlet>
+	<servlet>
+		<servlet-name>restServlet</servlet-name>
+		<servlet-class>com.mindforger.coachingnotebook.server.rest.RestServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>cronServlet</servlet-name>
+		<servlet-class>com.mindforger.coachingnotebook.server.cron.CronServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>adminServlet</servlet-name>
+		<servlet-class>com.mindforger.coachingnotebook.server.admin.AdminServlet</servlet-class>
+		<!-- load MF configuration from the repository -->
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>mindForgerServlet</servlet-name>
+		<servlet-class>com.mindforger.coachingnotebook.server.MindForgerServiceImpl</servlet-class>
+        <load-on-startup>1</load-on-startup>
+  	</servlet>
+    
+    <!-- mappings -->
+    
+	<servlet-mapping>
+		<servlet-name>index</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>editions</servlet-name>
+		<url-pattern>/editions</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>signUpExplorer</servlet-name>
+		<url-pattern>/signup/explorer</url-pattern>
+	</servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>loginRequiredServlet</servlet-name>
+        <url-pattern>/_ah/login_required</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginOpenid</servlet-name>
+        <url-pattern>/login-openid</url-pattern>
+    </servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>registrationServlet</servlet-name>
+		<url-pattern>/registration</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>registrationServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>outlineExport</servlet-name>
+		<url-pattern>/outline/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>restServlet</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>cronServlet</servlet-name>
+		<url-pattern>/cron/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>adminServlet</servlet-name>
+		<url-pattern>/admin/servlet</url-pattern>
+	</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>adminConsole</servlet-name>
+        <url-pattern>/admin/console</url-pattern>
+    </servlet-mapping>
+        
+	<servlet-mapping>
+		<servlet-name>mindForgerServlet</servlet-name>
+		<url-pattern>/mind_forger/mfgwt</url-pattern>
+	</servlet-mapping>
+
+    <security-constraint>
+        <web-resource-collection>
+            <url-pattern>/cron/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>        
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Admin area</web-resource-name>
+            <url-pattern>/admin/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+</web-app>

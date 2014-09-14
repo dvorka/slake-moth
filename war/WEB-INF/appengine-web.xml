@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+  <application>coaching-notebook-hrd</application>
+  <version>1</version>
+
+  <!-- Configure serving/caching of GWT files + cache expiration-->
+  <static-files>
+    <include path="**" expiration="5d"/>
+    <include path="**.nocache.*" expiration="0s" />
+    <include path="**.cache.*" expiration="365d" />
+    <exclude path="**.gwt.rpc" />
+  </static-files>
+
+  <!-- Configure java.util.logging -->
+  <system-properties>
+    <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+  </system-properties>
+
+  <admin-console>
+    <page name="MF Dashboard" url="/admin/console" />
+  </admin-console>
+  
+  <!-- .../_ah/warmup http://code.google.com/appengine/docs/java/config/appconfig.html#Warmup_Requests -->
+  <warmup-requests-enabled>true</warmup-requests-enabled>
+  
+  <!-- http://code.google.com/appengine/docs/java/config/appconfig.html -->
+  <threadsafe>true</threadsafe>
+   
+</appengine-web-app>

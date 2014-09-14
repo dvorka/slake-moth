@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='mind_forger'>
+
+  <!-- Module imports -->
+  <inherits name='com.google.gwt.rpc.RPC' />
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.i18n.I18N' />
+  <inherits name="com.google.gwt.logging.Logging"/>
+  <!-- <inherits name='com.google.gwt.user.theme.standard.Standard'> -->  
+  <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+  <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+        
+  <!-- SEVERE --><!-- TRUE FALSE --><!-- DISABLED ENABLED -->
+  <set-property name="gwt.logging.enabled" value="FALSE"/> 
+  <set-property name="gwt.logging.logLevel" value="INFO"/> 
+  <set-property name="gwt.logging.consoleHandler" value="DISABLED"/>
+
+  <!-- TODO GWT compilation reduced to Chrome only -->
+  <set-property name="user.agent" value="safari"/>
+
+  <!-- 
+  
+  <define-property name="user.agent" values="ie6,gecko,gecko1_8"></define-property>
+            
+  <extend-property name="locale" values="cs"/>
+  <extend-property name="locale" values="es"/>
+  <extend-property name="locale" values="fr"/>
+  <extend-property name="locale" values="de"/>
+  -->      
+
+  <!-- Specify the app entry point class.                         -->
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='com.mindforger.coachingnotebook.client.Ria'/>
+
+  <!-- Specify the paths for translatable code -->
+  <source path='client'/>
+  <source path='shared'/>
+  
+</module>

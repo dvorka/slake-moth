@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- http://code.google.com/appengine/docs/java/config/cron.html -->
+<cronentries>
+  <cron>
+    <url>/cron/sendActionNotifications</url>
+    <description>Everyday send notification emails for actions whose deadline is approaching in 3, 2 and 1 day (~today). </description>
+    <schedule>every 24 hours</schedule>
+  </cron>
+</cronentries>
