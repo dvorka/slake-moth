@@ -5,42 +5,42 @@ Coaching notebook web applications for Google App Engine.
 
 <kbd>![Feature](doc/actions.png)</kbd>
 
-![Feature](doc/attachments.png)
+<kbd>![Feature](doc/attachments.png)</kbd>
 
-![Feature](doc/categories.png)
+<kbd>![Feature](doc/categories.png)</kbd>
 
-![Feature](doc/connections.png)
+<kbd>![Feature](doc/connections.png)</kbd>
 
-![Feature](doc/dashboard.png)
+<kbd>![Feature](doc/dashboard.png)</kbd>
 
-![Feature](doc/eisenhower.png)
+<kbd>![Feature](doc/eisenhower.png)</kbd>
 
-![Feature](doc/goal-lifecycle.png)
+<kbd>![Feature](doc/goal-lifecycle.png)</kbd>
 
-![Feature](doc/grow.png)
+<kbd>![Feature](doc/grow.png)</kbd>
 
-![Feature](doc/interlinking.png)
+<kbd>![Feature](doc/interlinking.png)</kbd>
 
-![Feature](doc/lessons-learned.png)
+<kbd>![Feature](doc/lessons-learned.png)</kbd>
 
-![Feature](doc/life-vision.png)
+<kbd>![Feature](doc/life-vision.png)</kbd>
 
-![Feature](doc/mind-forger-outline.png)
+<kbd>![Feature](doc/mind-forger-outline.png)</kbd>
 
-![Feature](doc/mr-mf.png)
+<kbd>![Feature](doc/mr-mf.png)</kbd>
 
-![Feature](doc/notifications.png)
+<kbd>![Feature](doc/notifications.png)</kbd>
 
-![Feature](doc/outliner-operations.png)
+<kbd>![Feature](doc/outliner-operations.png)</kbd>
 
-![Feature](doc/profile.png)
+<kbd>![Feature](doc/profile.png)</kbd>
 
-![Feature](doc/sharing.png)
+<kbd>![Feature](doc/sharing.png)</kbd>
 
-![Feature](doc/smart.png)
+<kbd>![Feature](doc/smart.png)</kbd>
 
-![Feature](doc/strategy.png)
+<kbd>![Feature](doc/strategy.png)</kbd>
 
-![Feature](doc/swot.png)
+<kbd>![Feature](doc/swot.png)</kbd>
 
-![Feature](doc/wheel-of-life.png)
+<kbd>![Feature](doc/wheel-of-life.png)</kbd>
