@@ -1,7 +1,7 @@
 Coaching Notebook
 =================
 
-Coaching notebook web applications for Google App Engine.
+Coaching notebook web applications for Google App Engine - check it live http://web.mindforger.com
 
 <kbd>![Feature](doc/actions.png)</kbd>
 
