@@ -3,7 +3,7 @@ Coaching Notebook
 
 Coaching notebook web applications for Google App Engine.
 
-![Feature](doc/actions.png)
+<kbd>![Feature](doc/actions.png)</kbd>
 
 ![Feature](doc/attachments.png)
 
